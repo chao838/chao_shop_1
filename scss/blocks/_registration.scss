@@ -1,113 +1,101 @@
-.registration__header {
-    background-color: $gray-registration-color;
-}
-
-.registration__title {
-    padding: 60px 0;
-    font-weight: normal;
-    font-size: 24px;
-    line-height: 29px;
-    text-transform: uppercase;
-    color: $dark-pink-color;
-}
-
-.registration__block {
-    margin-top: 0;
-    margin-bottom: 96px;
-    padding-top: 64px;
-    display: flex;
-    justify-content: space-between;
-    flex-grow: 1;
-}
-
-.registration__contacts {
-    display: flex;
-    flex-direction: column;
-    width: 360px;
-}
-
-.registration_loyalty {
-    margin-left: 128px;
-    width: 652px;
-}
-
-.registration_loyalty-title {
-    font-weight: 300;
-    font-size: 24px;
-    line-height: 29px;
-    text-transform: uppercase;
-    color: $black-super-color;
-}
-
-.registration_loyalty-text {
-    margin-top: 22px;
-    font-weight: 300;
-    font-size: 24px;
-    line-height: 29px;
-    color: $black-super-color;
-}
-
-.registration_loyalty-list {
-    margin-top: 6px;
-    margin-left: 25px
-}
-
-.registration_loyalty-offer {
-    position: relative;
-    padding-top: 16px;
-    font-weight: 300;
-    font-size: 24px;
-    line-height: 29px;
-    color: $black-super-color;
-}
-
-.registration_loyalty-offer::before {
-    content: '';
-    width: 20px;
-    height: 16px;
-    position: absolute;
-    left: -25px;
-    bottom: 5px;
-    background-image: url(../img/marker.svg);
-}
-
-.registration__contacts-input {
-    border: 1px solid #A4A4A4;
-    min-width: 350px;
-    min-height: 45px;
-    display: block;
-    margin-top: 20px;
-    font-weight: 300;
-    font-size: 13px;
-    line-height: 16px;
-    color: #B1B1B1;
-}
-
-.registration__contacts-female {
-    margin-left: 20px;
-}
-
-.registration__contacts-radio {
-    margin-top: 31px;
-    margin-bottom: 33px;
-}
-
-.registration__contacts-text {
-    font-weight: 300;
-    font-size: 13px;
-    line-height: 16px;
-    margin-top: 15px;
-    color: #B1B1B1;
-}
-
-.registration__contacts-button {
-    margin-top: 39px;
-    background-color: $dark-pink-color;
-    width: 167px;
-    height: 50px;
-    font-weight: normal;
-    font-size: 14px;
-    line-height: 17px;
-    text-transform: uppercase;
-    color: $white-color;
+.registration {
+    &__header {
+        background-color: $gray-registration-color;
+    }
+    &__title {
+        padding: 60px 0;
+        font-weight: normal;
+        font-size: 24px;
+        line-height: 29px;
+        text-transform: uppercase;
+        color: $dark-pink-color;
+    }
+    &__block {
+        margin-top: 0;
+        margin-bottom: 96px;
+        padding-top: 64px;
+        display: flex;
+        justify-content: space-between;
+        flex-grow: 1;
+    }
+    &__contacts {
+        display: flex;
+        flex-direction: column;
+        width: 360px;
+    }
+    &_loyalty {
+        margin-left: 128px;
+        width: 652px;
+    }
+    &_loyalty-title {
+        font-weight: 300;
+        font-size: 24px;
+        line-height: 29px;
+        text-transform: uppercase;
+        color: $black-super-color;
+    }
+    &_loyalty-text {
+        margin-top: 22px;
+        font-weight: 300;
+        font-size: 24px;
+        line-height: 29px;
+        color: $black-super-color;
+    }
+    &_loyalty-list {
+        margin-top: 6px;
+        margin-left: 25px
+    }
+    &_loyalty-offer {
+        position: relative;
+        padding-top: 16px;
+        font-weight: 300;
+        font-size: 24px;
+        line-height: 29px;
+        color: $black-super-color;
+    }
+    &_loyalty-offer::before {
+        content: '';
+        width: 20px;
+        height: 16px;
+        position: absolute;
+        left: -25px;
+        bottom: 5px;
+        background-image: url(../img/marker.svg);
+    }
+    &__contacts-input {
+        border: 1px solid #A4A4A4;
+        min-width: 350px;
+        min-height: 45px;
+        display: block;
+        margin-top: 20px;
+        font-weight: 300;
+        font-size: 13px;
+        line-height: 16px;
+        color: #B1B1B1;
+    }
+    &__contacts-female {
+        margin-left: 20px;
+    }
+    &__contacts-radio {
+        margin-top: 31px;
+        margin-bottom: 33px;
+    }
+    &__contacts-text {
+        font-weight: 300;
+        font-size: 13px;
+        line-height: 16px;
+        margin-top: 15px;
+        color: #B1B1B1;
+    }
+    &__contacts-button {
+        margin-top: 39px;
+        background-color: $dark-pink-color;
+        width: 167px;
+        height: 50px;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 17px;
+        text-transform: uppercase;
+        color: $white-color;
+    }
 }
