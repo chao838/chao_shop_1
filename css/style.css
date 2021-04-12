@@ -143,7 +143,7 @@ body {
 }
 
 .container {
-  width: 1140px;
+  width: 71%;
   margin: 0 auto;
 }
 
@@ -156,6 +156,12 @@ body {
   overflow: hidden;
   border: 0;
   clip: rect(0 0 0 0);
+}
+
+@media (max-width: 768px) {
+  .container {
+    width: 96%;
+  }
 }
 
 .header {
@@ -243,19 +249,48 @@ body {
   fill: #F16D7F;
 }
 
+@media (max-width: 1600px) {
+  .header {
+    padding: 0 16px;
+  }
+}
+
+@media (max-width: 768px) {
+  .header {
+    padding: 0 16px;
+  }
+  .header__basket {
+    display: none;
+  }
+  .header__link {
+    display: none;
+  }
+}
+
 .brand {
   max-width: 1600px;
-  margin: 0 auto;
   display: flex;
-  margin: 0 0 63px;
+  margin: 0 auto 065px auto;
+}
+
+@media (max-width: 768px) {
+  .brand {
+    min-height: 363px;
+  }
 }
 
 .brand__title-container {
   background: #F1E4E6;
   flex-grow: 1;
-  padding: 0 0 0 92px;
+  padding: 0 0 0 88px;
   display: flex;
   align-items: center;
+}
+
+@media (max-width: 1600px) {
+  .brand__title-container {
+    padding: 0 0 0 67px;
+  }
 }
 
 .brand__title {
@@ -265,6 +300,22 @@ body {
   text-transform: uppercase;
 }
 
+@media (max-width: 1600px) {
+  .brand__title {
+    font-size: 44px;
+    line-height: 52px;
+    font-weight: 900;
+  }
+}
+
+@media (max-width: 768px) {
+  .brand__title {
+    font-size: 38px;
+    line-height: 45px;
+    font-weight: 900;
+  }
+}
+
 .brand__sub-title {
   font-size: 32px;
   font-weight: 700;
@@ -272,8 +323,35 @@ body {
   display: block;
 }
 
+@media (max-width: 1600px) {
+  .brand__sub-title {
+    font-size: 24px;
+    line-height: 28px;
+    font-weight: 700;
+  }
+}
+
+@media (max-width: 768px) {
+  .brand__sub-title {
+    font-size: 20px;
+    line-height: 24px;
+    font-weight: 700;
+  }
+}
+
 .brand__pink-sub-title {
   color: #F16D7F;
+}
+
+.brand__img {
+  height: auto;
+  width: 50%;
+}
+
+@media (max-width: 768px) {
+  .brand__img {
+    display: none;
+  }
 }
 
 .promotions__list {
@@ -285,12 +363,28 @@ body {
 
 .promotions__item {
   position: relative;
-  width: 360px;
+  width: 32%;
   min-height: 260px;
   display: flex;
   align-items: center;
   justify-content: center;
   margin: 0 0 30px;
+}
+
+@media (max-width: 1600px) {
+  .promotions__item {
+    width: 32%;
+    min-height: 168px;
+    margin: 0 0 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .promotions__item {
+    width: 100%;
+    min-height: 247px;
+    margin: 0 0 32px;
+  }
 }
 
 .promotions__item--woman {
@@ -312,6 +406,12 @@ body {
   background-image: url("../img/ACCESORIES.png");
   background-size: cover;
   width: 100%;
+}
+
+@media (max-width: 1600px) {
+  .promotions__item--accesories {
+    min-height: 116px;
+  }
 }
 
 .promotions__title {
@@ -367,12 +467,27 @@ body {
   margin-top: 48px;
 }
 
+@media (max-width: 768px) {
+  .products__list {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
 .products__item {
-  width: 360px;
+  width: 32%;
+}
+
+@media (max-width: 1600px) {
+  .products__item {
+    width: 48%;
+  }
 }
 
 .products__img {
   display: block;
+  width: 100%;
+  height: auto;
 }
 
 .products__description {
@@ -434,6 +549,20 @@ body {
   justify-content: space-between;
 }
 
+@media (max-width: 1600px) {
+  .advantages__list {
+    display: block;
+    padding: 48px 204px 64px;
+  }
+}
+
+@media (max-width: 768px) {
+  .advantages__list {
+    padding: 48px 0 64px;
+    text-align: center;
+  }
+}
+
 .advantages__title {
   font-weight: normal;
   font-size: 19.96px;
@@ -443,7 +572,7 @@ body {
   color: #F8F8F8;
 }
 
-.advantages .advantages__delivery {
+.advantages__delivery {
   margin-top: 28px;
 }
 
@@ -457,6 +586,14 @@ body {
 }
 
 /* width: 360px; */
+.footer {
+  /* .footer__subscribe-item { 
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }*/
+}
+
 .footer__subscribe {
   background-image: url(../img/footer_background.png);
   /* background-repeat: no-repeat; */
@@ -471,11 +608,14 @@ body {
   padding: 97px 0 126px;
 }
 
-/* .footer__subscribe-item { 
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}*/
+@media (max-width: 1600px) {
+  .footer__subscribe-list {
+    display: block;
+    padding: 54px 0 140px;
+    text-align: center;
+  }
+}
+
 .footer__subscribe-img {
   display: block;
   margin: auto;
@@ -489,6 +629,12 @@ body {
   font-size: 20px;
   line-height: 24px;
   color: #222222;
+}
+
+@media (max-width: 1600px) {
+  .footer__text {
+    margin: 30px auto;
+  }
 }
 
 .footer__subscribe-title {
@@ -546,7 +692,7 @@ body {
 }
 
 .footer__social {
-  background-color: black-color;
+  background-color: #222222;
 }
 
 .footer__social-container {

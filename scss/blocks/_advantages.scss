@@ -9,6 +9,14 @@
         padding: 104px 0;
         display: flex;
         justify-content: space-between;
+        @include tablet {
+            display: block;
+            padding: 48px 204px 64px;
+        }
+        @include mobile {
+            padding: 48px 0 64px;
+            text-align: center;
+        }
     }
     // .advantages__description {}
     &__title {
@@ -19,7 +27,7 @@
         margin-top: 20px;
         color: $gray-color;
     }
-    .advantages__delivery {
+    &__delivery {
         margin-top: 28px;
     }
     &__text {

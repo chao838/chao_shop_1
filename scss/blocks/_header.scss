@@ -69,3 +69,26 @@
         fill: $dark-pink-color;
     }
 }
+
+@media (max-width: $desktop-width) {
+    .header {
+        padding: 0 16px;
+    }
+}
+
+// @media (max-width: $tablet-width) {
+//     .header {
+//         padding: 0 16px;
+//     }
+// }
+@media (max-width: $tablet-width) {
+    .header {
+        padding: 0 16px;
+        &__basket {
+            display: none;
+        }
+        &__link {
+            display: none;
+        }
+    }
+}

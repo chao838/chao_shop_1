@@ -22,12 +22,22 @@
         justify-content: space-between;
         flex-wrap: wrap;
         margin-top: 48px;
+        @include mobile {
+            flex-direction: column;
+            align-items: center;
+        }
     }
     &__item {
-        width: 360px;
+        width: 32%;
+        // width: 360px;
+        @include tablet {
+            width: 48%;
+        }
     }
     &__img {
         display: block;
+        width: 100%;
+        height: auto;
     }
     &__description {
         background: $gray-color;
