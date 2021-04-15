@@ -64,22 +64,23 @@
         font-size: 14px;
         line-height: 17px;
         align-items: center;
-        width: 275px;
+        width: 256px;
         height: 49px;
         border: none;
-        border-radius: 15px 0 0 15px;
+        border-radius: 25px 0 0 25px;
         /* vertical-align: middle; */
         background-color: $gray-light-middle-color;
     }
     &__subscribe-button {
         border: none;
-        border-radius: 0 15px 15px 0;
+        border-radius: 0 25px 25px 0;
         width: 100px;
-        height: 50px;
+        height: 51px;
         margin-left: -3px;
         background-color: $dark-pink-color;
         font-size: 14px;
         line-height: 17px;
+        outline: none;
         /* display: flex; */
         align-items: center;
         text-align: center;
