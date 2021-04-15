@@ -47,11 +47,32 @@
     }
     &__title {
         position: absolute;
+        text-transform: uppercase;
         /* left: 103px; */
         top: 105px;
         @include font (16px,
         19px,
         400);
+        @include tablet {
+            top: 58px;
+        }
+        // font-weight: normal;
+        // font-size: 16px;
+        // line-height: 19px;
+        text-align: center;
+        color: $white-color;
+    }
+    &__title--accesories {
+        position: absolute;
+        text-transform: uppercase;
+        /* left: 103px; */
+        top: 65px;
+        @include font (16px,
+        19px,
+        400);
+        @include tablet {
+            top: 33px;
+        }
         // font-weight: normal;
         // font-size: 16px;
         // line-height: 19px;
@@ -63,9 +84,9 @@
         text-transform: uppercase;
         /* left: 103px; */
         /* right: 69.56%; */
-        @include font (16px,
-        19px,
-        400);
+        @include font (24px,
+        29px,
+        700);
         /* top: 105px; */
         /* bottom: 72.34%; */
         // font-weight: normal;

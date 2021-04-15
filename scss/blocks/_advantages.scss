@@ -11,11 +11,25 @@
         justify-content: space-between;
         @include tablet {
             display: block;
-            padding: 48px 204px 64px;
+            padding: 1px 0 64px;
+            // padding-bottom: 64px;
+            margin: auto;
+            width: 49%;
         }
         @include mobile {
-            padding: 48px 0 64px;
+            // padding: 48px 0 64px;
             text-align: center;
+        }
+    }
+    &__item {
+        @include tablet {
+            //     padding-top: 48px;
+            //     margin-bottom: 48px;
+        }
+    }
+    &__icon {
+        @include tablet {
+            margin: 48px auto 0;
         }
     }
     // .advantages__description {}

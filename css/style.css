@@ -416,6 +416,7 @@ body {
 
 .promotions__title {
   position: absolute;
+  text-transform: uppercase;
   /* left: 103px; */
   top: 105px;
   font-size: 16px;
@@ -425,14 +426,38 @@ body {
   color: #FFFFFF;
 }
 
+@media (max-width: 1600px) {
+  .promotions__title {
+    top: 58px;
+  }
+}
+
+.promotions__title--accesories {
+  position: absolute;
+  text-transform: uppercase;
+  /* left: 103px; */
+  top: 65px;
+  font-size: 16px;
+  line-height: 19px;
+  font-weight: 400;
+  text-align: center;
+  color: #FFFFFF;
+}
+
+@media (max-width: 1600px) {
+  .promotions__title--accesories {
+    top: 33px;
+  }
+}
+
 .promotions__text {
   position: absolute;
   text-transform: uppercase;
   /* left: 103px; */
   /* right: 69.56%; */
-  font-size: 16px;
-  line-height: 19px;
-  font-weight: 400;
+  font-size: 24px;
+  line-height: 29px;
+  font-weight: 700;
   /* top: 105px; */
   /* bottom: 72.34%; */
   text-align: center;
@@ -552,14 +577,21 @@ body {
 @media (max-width: 1600px) {
   .advantages__list {
     display: block;
-    padding: 48px 204px 64px;
+    padding: 1px 0 64px;
+    margin: auto;
+    width: 49%;
   }
 }
 
 @media (max-width: 768px) {
   .advantages__list {
-    padding: 48px 0 64px;
     text-align: center;
+  }
+}
+
+@media (max-width: 1600px) {
+  .advantages__icon {
+    margin: 48px auto 0;
   }
 }
 
@@ -667,23 +699,24 @@ body {
   font-size: 14px;
   line-height: 17px;
   align-items: center;
-  width: 275px;
+  width: 256px;
   height: 49px;
   border: none;
-  border-radius: 15px 0 0 15px;
+  border-radius: 25px 0 0 25px;
   /* vertical-align: middle; */
   background-color: #e1e1e1;
 }
 
 .footer__subscribe-button {
   border: none;
-  border-radius: 0 15px 15px 0;
+  border-radius: 0 25px 25px 0;
   width: 100px;
-  height: 50px;
+  height: 51px;
   margin-left: -3px;
   background-color: #F16D7F;
   font-size: 14px;
   line-height: 17px;
+  outline: none;
   /* display: flex; */
   align-items: center;
   text-align: center;
@@ -744,12 +777,12 @@ body {
 .registration__contacts {
   display: flex;
   flex-direction: column;
-  width: 360px;
+  width: 100%;
 }
 
 .registration_loyalty {
-  margin-left: 128px;
-  width: 652px;
+  margin-left: 11%;
+  width: 100%;
 }
 
 .registration_loyalty-title {
@@ -794,7 +827,7 @@ body {
 
 .registration__contacts-input {
   border: 1px solid #A4A4A4;
-  min-width: 350px;
+  min-width: 100%;
   min-height: 45px;
   display: block;
   margin-top: 20px;
