@@ -1,15 +1,4 @@
 .registration {
-    &__header {
-        background-color: $gray-registration-color;
-    }
-    &__title {
-        padding: 60px 0;
-        font-weight: normal;
-        font-size: 24px;
-        line-height: 29px;
-        text-transform: uppercase;
-        color: $dark-pink-color;
-    }
     &__block {
         margin-top: 0;
         margin-bottom: 96px;
