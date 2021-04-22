@@ -1,15 +1,40 @@
 .catalog {
-    background-color: $gray-registration-color;
-    &__header {
+    // background-color: $gray-registration-color;
+    // &__title {
+    //     // padding: 60px 0;
+    //     font-weight: normal;
+    //     font-size: 24px;
+    //     line-height: 29px;
+    //     text-transform: uppercase;
+    //     color: $dark-pink-color;
+    // }
+    &__filter {
         display: flex;
+        // margin-right: ;
+        padding: 51px 0 17px;
+        font-size: 14px;
+        line-height: 17px;
+        width: 58%;
         justify-content: space-between;
     }
-    &__title {
-        padding: 60px 0;
-        font-weight: normal;
-        font-size: 24px;
-        line-height: 29px;
+    &__filter-button {
+        background-color: $white-color;
+        border: none;
+        font-weight: 600;
         text-transform: uppercase;
-        color: $dark-pink-color;
+    }
+    &__filter-imgbutton {
+        margin-left: -5px;
+        background-color: $white-color;
+        border: none;
+    }
+    &__select-bar {
+        display: flex;
+        text-transform: uppercase;
+        font-weight: normal;
+    }
+    &__pagination {
+        justify-content: center;
+        // margin: 0 auto;
     }
 }
